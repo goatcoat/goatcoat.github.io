@@ -3,9 +3,10 @@ body {
 }
 h1 {
 	font-family: Arial;
+	margin: 0px;
 	position: relative;
-	right: 50%;
-	-ms-transform: translateX(50%);
-	transform: translateX(50%);
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
