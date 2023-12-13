@@ -1,12 +1,5 @@
-body {
-	position: absolute;
-}
 h1 {
 	font-family: Arial;
-	margin: 0px;
-	position: relative;
-	left: 50%;
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+	transform: translate(50px, 100px);
 }
 
