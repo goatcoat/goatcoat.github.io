@@ -1,9 +1,4 @@
-@font-face {
-	font-family: Lexend;
-	url: ('lexend-regular.ttf')
-}
 #title {
-	font-family: Lexend;
 	transform: translate(100px, 20px);
 	width: 100;
 	height: 100;
