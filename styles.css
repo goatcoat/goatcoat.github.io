@@ -1,4 +1,9 @@
+body {
+	position: absolute;
+}
 h1 {
 	font-family: Arial;
-	text-align: center;
+	position: relative;
+	right: 50%;
 }
+
