@@ -2,34 +2,39 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 <body>
 <style>
-#title {
+body {
 	font-family: Lexend;
-	font-size: 100px;
+	overflow-x: hidden;
+}
+#title {
 	color: Cornsilk;
-	width: 1600;
-	height: 400;
+	width: 100%;
+	font-size: 8vh;
+	height: font-size;
 	transform: translate(-10px, -10px);
 	background-color: DarkCyan;
-	opacity: 0.8;
+	opacity: 0.95;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+	position: fixed;
+	text-align: center;
+	z-index: 4;
 }
-#title.mobile {
+h1 {
 	font-size: 50px;
-	width: 800px;
+	transform: translate(0px, 10vh);
+	z-index: 0;
 }
-#title.desktop {
-	font-size: 100px;
-	width: 1600px;
+em {
+	text-decoration: line-through;
+}
+.price-info {
+	font-size: 30px;
+	transform: translate(500px, -300px);
 }
 </style>
-<div id="title"> Fai Shopping come il Goat su Goat Shopping! Sconti Natalizi su Armi da Fuoco e altro! </div>
+<div id="title"> Goat Shopping </div>
+<h1> Fai Shopping come il Goat su Goat Shopping! Sconti Natalizi su Armi da Fuoco e altro! </h1>
 <img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
-<img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif">
+<div class="price-info"> AK-47 <br> <em> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
+
 </body>
-
-
