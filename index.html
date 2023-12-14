@@ -47,7 +47,6 @@ em {
 	transform: translate(0px, -10vh);
 }
 #spuderman-info {
-	font-family: "Comic Sans MS", cursive;
 	transform: translate(510px, -400px);
 }
 .purchase {
@@ -59,8 +58,14 @@ em {
 <div id="separator"> </div>
 <img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif" width="500vh">
 <div class="price-info"> AK-47 <br> <em> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e <br>progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
-<img class="spuderman" src="https://static.wikia.nocookie.net/derp-cat/images/7/78/Spooderman.jpg/revision/latest/thumbnail/width/360/height/360?cb=20181007162659" width="500vh">
+<img class="spuderman" src="https://m.media-amazon.com/images/I/51tEXq0ZDcL._AC_UF1000,1000_QL80_.jpg" width="500vh">
 <div class="price-info" id="spuderman-info"> Tuta Spuderman per Bambini Vegetariani <br> <em> 104,99$</em> 29,99$ <br>Pochi conoscono la vera identità di spuderman</div>
-<img class="purchase" src="https://img.freepik.com/premium-vector/red-buy-now-button-web-design-click-here-button-buy-now-shopping-concept_820464-146.jpg" width="200vh">
+<script>
+function playMusic() {
+  var music = new Audio('file:///C:/Users/MSI%20PC/Desktop/yes/spiderman-theme.mp3');
+  music.play();
+}
+</script>
+<button class="purchase" type="button" value="sound" onclick="playMusic()"><img src="https://img.freepik.com/premium-vector/red-buy-now-button-web-design-click-here-button-buy-now-shopping-concept_820464-146.jpg" width="200vh"></button>
 
 </body>
