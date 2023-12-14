@@ -64,11 +64,16 @@ em {
 <img class="spuderman" src="https://m.media-amazon.com/images/I/51tEXq0ZDcL._AC_UF1000,1000_QL80_.jpg" width="500vh">
 <div class="price-info" id="spuderman-info"> Tuta Spuderman per Bambini Vegetariani <br> <em> 104,99$</em> 29,99$ <br>Pochi conoscono la vera identità di spuderman</div>
 <script>
+var music = new Audio('spiderman-theme.mp3');
 function playMusic() {
-  var music = new Audio('spiderman-theme.mp3');
   music.play();
+}
+function stopMusic() {
+  music.pause();
+  music.currentTime = 0;
 }
 </script>
 <button class="purchase" type="button" value="sound" onclick="playMusic()"><img class="button-image" src="https://img.freepik.com/premium-vector/red-buy-now-button-web-design-click-here-button-buy-now-shopping-concept_820464-146.jpg" width="200vh"></button>
+<button class="purchase" type="button" value="sound" onclick="stopMusic()">Stop</button>
 
 </body>
