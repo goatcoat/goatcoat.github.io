@@ -8,6 +8,7 @@ body {
 }
 #title {
 	color: Cornsilk;
+	backdrop-filter: blur(10px);
 	width: 100%;
 	font-size: 8vh;
 	height: font-size;
@@ -44,13 +45,13 @@ img {
 	transform: translate(510px, -300px);
 }
 .spuderman {
-	transform: translate(0px, 0vh);
+	transform: translate(0px,32vh);
 }
 #spuderman-info {
-	transform: translate(510px, -400px);
+	transform: translate(510px, -100px);
 }
 .purchase {
-	transform: translate(510px, -400px);
+	transform: translate(510px, -100px);
 }
 .button-image {
 	transform: translate(0px, 0px);
@@ -64,7 +65,11 @@ img {
 <h1> Fai Shopping come il Goat su Goat Shopping!<br> Sconti Natalizi su Armi da Fuoco e altro! </h1>
 <div id="separator"> </div>
 <img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif" width="500vh">
-<div class="price-info"> AK-47 <br> <em> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e <br>progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
+<div class="price-info"> AK-47 <br> <em class="price"> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e <br>progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
+
+<img class="flamethrower" src="https://ark.wiki.gg/images/a/ad/Flamethrower.png" width="500vh">
+<div class="price-info"> Lanciafiamme <br> <em class="price"> 14,99$</em> 1,99$ <br>Il lanciafiamme è un'arma utilizzata per incendiare vaste zone;<br> utilizza miscele combustibili, spesso a base di petrolio o napalm.</div>
+
 <img class="spuderman" src="https://m.media-amazon.com/images/I/51tEXq0ZDcL._AC_UF1000,1000_QL80_.jpg" width="500vh">
 <div class="price-info" id="spuderman-info"> Tuta Spuderman per Bambini Vegetariani <br> <em class="price"> 104,99$</em> 29,99$ <br>Pochi conoscono la vera identità di spuderman<br><em class="light">(sicuramente non lorenzo)</em></div>
 <script>
