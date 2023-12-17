@@ -132,6 +132,131 @@ img {
 }
 }
 
+@media only screen and (max-width: 600px) {
+body {
+	font-family: Lexend;
+	overflow-x: hidden;
+}
+#title {
+	color: Cornsilk;
+	backdrop-filter: blur(10px);
+	width: 100%;
+	font-size: 8vh;
+	height: font-size;
+	transform: translate(-10px, -10px);
+	background-color: DarkCyan;
+	opacity: 0.95;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+	position: fixed;
+	text-align: center;
+	z-index: 4;
+	border-radius: 5px;
+}
+#container1 {
+	transform: translate(0px, -100px);
+}
+#container-ak-47 {
+	transform: translate(0px, -50px);
+}
+#container-flamethrower {
+	transform: translate(0px, -200px);
+}
+#container-spuderman {
+	transform: translate(0px, -390px);
+}
+
+h1 {
+	font-size: 50px;
+	transform: translate(0px, 10vh);
+	z-index: 0;
+}
+img {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+	opacity: 1.0;
+	transform: translate(0px, 8vh);
+	border-radius: 25px;
+}
+/*#separator {
+	background-color: Black;
+	width: 200%;
+	height: 1vh;
+	transform: translate(0px, -12vh);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}*/
+.price {
+	text-decoration: line-through;
+}
+
+.price-info {
+	font-size: 30px;
+}
+#ak-47-info {
+	transform: translate(510px, -300px);
+}
+#flamethrower-info {
+	transform: translate(510px, -300px);
+}
+#spuderman-info {
+	transform: translate(510px, -300px);
+}
+
+.purchase-button {
+	transform: translate(510px, -300px);
+	padding: 15px 25px;
+	font-size: 24px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: #fff;
+  	background-color: Red;
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+}
+.purchase-button:hover {
+  	background-color: Crimson;
+}
+.purchase-button:active {
+	background-color: Crimson;
+  	box-shadow: 0 5px #666;
+  	transform: translate(510px, -296px);
+}
+.stop-button {
+	transform: translate(365px, -240px);
+	padding: 15px 25px;
+	font-size: 12px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: #fff;
+  	background-color: DimGray;
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+}
+.stop-button:hover {
+	background-color: Black;
+}
+.stop-button:active {
+	background-color: Black;
+  	box-shadow: 0 5px #666;
+  	transform: translate(365px, -236px);
+}
+
+.button-image {
+	transform: translate(0px, 0px);
+}
+.light-text {
+	color: Gainsboro;
+}
+.goat {
+	box-shadow: 0px;
+	opacity: 1.0;
+	transform: translate(50vh,-13vh);
+	z-index: 4;
+}
+}
+
 </style>
 <div id="title"> Goat Shopping</div>
 
