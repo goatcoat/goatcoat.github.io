@@ -23,7 +23,21 @@ body {
 	position: fixed;
 	text-align: center;
 	z-index: 4;
+	border-radius: 5px;
 }
+#container1 {
+	transform: translate(0px, -100px);
+}
+#container-ak-47 {
+	transform: translate(0px, -50px);
+}
+#container-flamethrower {
+	transform: translate(0px, -200px);
+}
+#container-spuderman {
+	transform: translate(0px, -390px);
+}
+
 h1 {
 	font-size: 50px;
 	transform: translate(0px, 10vh);
@@ -33,48 +47,109 @@ img {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 	opacity: 1.0;
 	transform: translate(0px, 8vh);
+	border-radius: 25px;
 }
 #separator {
 	background-color: Black;
 	width: 200%;
 	height: 1vh;
-	transform: translate(0px, 8vh);
+	transform: translate(0px, -12vh);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 }
 .price {
 	text-decoration: line-through;
 }
+
 .price-info {
 	font-size: 30px;
+}
+#ak-47-info {
 	transform: translate(510px, -300px);
 }
-.spuderman {
-	transform: translate(0px,32vh);
+#flamethrower-info {
+	transform: translate(510px, -300px);
 }
 #spuderman-info {
-	transform: translate(510px, -100px);
+	transform: translate(510px, -300px);
 }
-.purchase {
-	transform: translate(510px, -100px);
+
+.purchase-button {
+	transform: translate(510px, -300px);
+	padding: 15px 25px;
+	font-size: 24px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: #fff;
+  	background-color: Red;
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
 }
+.purchase-button:hover {
+  	background-color: Crimson;
+}
+.purchase-button:active {
+	background-color: Crimson;
+  	box-shadow: 0 5px #666;
+  	transform: translate(510px, -296px);
+}
+.stop-button {
+	transform: translate(365px, -240px);
+	padding: 15px 25px;
+	font-size: 12px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: #fff;
+  	background-color: DimGray;
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+}
+.stop-button:hover {
+	background-color: Black;
+}
+.stop-button:active {
+	background-color: Black;
+  	box-shadow: 0 5px #666;
+  	transform: translate(365px, -236px);
+}
+
 .button-image {
 	transform: translate(0px, 0px);
 }
-.light {
+.light-text {
 	color: Gainsboro;
 }
+.goat {
+	box-shadow: 0px;
+	opacity: 1.0;
+	transform: translate(192vh,-13vh);
+	z-index: 4;
+}
 </style>
-<div id="title"> Goat Shopping </div>
+<div id="title"> Goat Shopping</div>
+
 <h1> Fai Shopping come il Goat su Goat Shopping!<br> Sconti Natalizi su Armi da Fuoco e altro! </h1>
+<img class="goat" src="images/goat_favicon.ico" width="100vh">
 <div id="separator"> </div>
+
+
+<div id="container1">
+<div id="container-ak-47">
 <img src="https://www.armeriacasabella.it/wp-content/uploads/2019/03/AK-47-SDM-.gif" width="500vh">
-<div class="price-info"> AK-47 <br> <em class="price"> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e <br>progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
+<div class="price-info" id="ak-47-info"> AK-47 <br> <em class="price"> 99,99$</em> 10,99$ <br>L'AK-47 è un fucile d'assalto ideato e <br>progettato in Unione Sovietica<br> dall'ex militare Michail Kalašnikov</div>
+</div>
 
-<img class="flamethrower" src="https://ark.wiki.gg/images/a/ad/Flamethrower.png" width="500vh">
-<div class="price-info"> Lanciafiamme <br> <em class="price"> 14,99$</em> 1,99$ <br>Il lanciafiamme è un'arma utilizzata per incendiare vaste zone;<br> utilizza miscele combustibili, spesso a base di petrolio o napalm.</div>
+<div id="container-flamethrower">
+<img class="flamethrower-image" src="https://ark.wiki.gg/images/a/ad/Flamethrower.png" width="500vh">
+<div class="price-info" id="flamethrower-info"> Lanciafiamme <br> <em class="price"> 14,99$</em> 1,99$ <br>Il lanciafiamme è un'arma utilizzata per <br>incendiare vaste zone;<br> utilizza miscele combustibili,<br> spesso a base di petrolio o napalm.</div>
+</div>
 
+<div id="container-spuderman">
 <img class="spuderman" src="https://m.media-amazon.com/images/I/51tEXq0ZDcL._AC_UF1000,1000_QL80_.jpg" width="500vh">
-<div class="price-info" id="spuderman-info"> Tuta Spuderman per Bambini Vegetariani <br> <em class="price"> 104,99$</em> 29,99$ <br>Pochi conoscono la vera identità di spuderman<br><em class="light">(sicuramente non lorenzo)</em></div>
+<div class="price-info" id="spuderman-info"> Tuta Spuderman per Bambini Vegetariani <br> <em class="price"> 104,99$</em> 29,99$ <br>Pochi conoscono la vera identità di spuderman<br><em class="light-text">(sicuramente non lorenzo)</em></div>
 <script>
 var music = new Audio('spiderman-theme.mp3');
 function playMusic() {
@@ -85,7 +160,11 @@ function stopMusic() {
   music.currentTime = 0;
 }
 </script>
-<button class="purchase" type="button" value="sound" onclick="playMusic()"><img class="button-image" src="https://img.freepik.com/premium-vector/red-buy-now-button-web-design-click-here-button-buy-now-shopping-concept_820464-146.jpg" width="200vh"></button>
-<button class="purchase" type="button" value="sound" onclick="stopMusic()">Stop</button>
+<button class="purchase-button" type="button" value="sound" onclick="playMusic()"> Acquista </button>
+<button class="stop-button" type="button" value="sound" onclick="stopMusic()">Stop</button>
+</div>
+
+</div>
+
 
 </body>
