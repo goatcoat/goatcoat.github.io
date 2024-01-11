@@ -9,9 +9,19 @@ body {
 	overflow-y: hidden;
 }
 video {
-	width: 100%;
-	height: auto;
 	z-index: 1;
+	min-width: 100%; 
+  	min-height: 100%; 
+
+ 
+  	width: auto;
+  	height: auto;
+
+  	/* Center the video */
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
 }
 audio {
 	display: none;
